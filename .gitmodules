@@ -64,3 +64,6 @@
 [submodule "packages/vim/bundle/supertab"]
 	path = packages/vim/bundle/supertab
 	url = https://github.com/ervandew/supertab
+[submodule "packages/vim/bundle/vimwiki"]
+	path = packages/vim/bundle/vimwiki
+	url = https://github.com/vim-scripts/vimwiki
