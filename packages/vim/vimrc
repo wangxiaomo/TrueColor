@@ -1,3 +1,4 @@
+set nocompatible
 source $VIMRUNTIME/ftplugin/man.vim
 
 call pathogen#infect()
