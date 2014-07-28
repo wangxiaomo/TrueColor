@@ -67,3 +67,6 @@
 [submodule "packages/vim/bundle/vimwiki"]
 	path = packages/vim/bundle/vimwiki
 	url = https://github.com/vim-scripts/vimwiki
+[submodule "packages/vim/bundle/vim-puppet"]
+	path = packages/vim/bundle/vim-puppet
+	url = https://github.com/rodjek/vim-puppet
