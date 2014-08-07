@@ -71,8 +71,6 @@ let g:flake8_ignore="E501,E128,W291,W293"
 let g:flake8_max_line_length=99
 let g:syntastic_python_checkers = ['pyflakes']
 let g:syntastic_always_populate_loc_list=1
-let g:EasyMotion_leader_key = ',.'
-let g:SuperTabDefaultCompletionType = "<c-n>"
 
 autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 hi IncSearch ctermbg=240

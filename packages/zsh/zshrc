@@ -6,4 +6,3 @@ bindkey -e
 unsetopt correct_all
 
 . ~/.incr.zsh
-. ~/.zsh_alias
