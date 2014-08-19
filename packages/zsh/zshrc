@@ -6,3 +6,6 @@ bindkey -e
 unsetopt correct_all
 
 . ~/.incr.zsh
+
+export VISUAL='vim'
+export EDITOR='vim'
