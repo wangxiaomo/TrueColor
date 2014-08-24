@@ -9,3 +9,7 @@ unsetopt correct_all
 
 export VISUAL='vim'
 export EDITOR='vim'
+export LANG='zh_CN.UTF-8'
+
+alias drm='docker rm $(docker ps -a -q)'
+alias dri='docker rmi '
