@@ -1,7 +1,12 @@
 export ZSH=$HOME/.oh-my-zsh
 plugins=(git svn python)
-ZSH_THEME="steeef"
+ZSH_THEME="cloud"
+ZSH_THEME_CLOUD_PREFIX="♠wangxiaomo"
 source $ZSH/oh-my-zsh.sh
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[green]%}] %{$fg[yellow]%}*dirty*%{$reset_color%}"
+PROMPT='%{$fg_bold[cyan]%}$ZSH_THEME_CLOUD_PREFIX %{$fg_bold[green]%}%p# %{$fg[green]%}%c %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}%'
+ZSH_THEME_GIT_PROMPT_PREFIX="$ZSH_THEME_GIT_PROMPT_PREFIX "
+ZSH_THEME_GIT_PROMPT_SUFFIX="$ZSH_THEME_GIT_PROMPT_SUFFIX "
 
 bindkey -e
 unsetopt correct_all
