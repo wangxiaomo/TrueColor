@@ -6,7 +6,7 @@ source $ZSH/oh-my-zsh.sh
 . ~/.incr.zsh
 
 bindkey -e
-PROMPT="${current_dir} %{$fg[yellow]%}@dev%{$reset_color%} ${git_branch}%B%%%b "
+PROMPT="%{$fg[magenta]%}(${USER})%{$reset_color%}${current_dir} %{$fg[yellow]%}@dev%{$reset_color%} ${git_branch}%B%%%b "
 unsetopt correct_all
 
 export VISUAL='vim'
