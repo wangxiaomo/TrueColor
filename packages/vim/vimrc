@@ -83,6 +83,7 @@ autocmd FileType ruby set sw=2 ts=2 expandtab
 au BufNewFile,BufReadPost *.coffee setl sw=2 ts=2 expandtab
 au BufNewFile,BufReadPost *.json setl ft=javascript
 au BufNewFile,BufReadPost *.pac setl ft=javascript
+au BufNewFile,BufReadPost *.scss setl ft=css
 
 command PlzW w !sudo tee %
 command Flake8 call Flake8()

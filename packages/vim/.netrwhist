@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/xiaomo/Library/Application Support/Google/Chrome/Default/Extensions/kggmaigniomialbjlabgfnjakaenmjam'
-let g:netrw_dirhist_2='/data/home/wangxiaomo/shire/corelib/utils'
-let g:netrw_dirhist_3='/data/home/wangxiaomo/ebi/.git'
-let g:netrw_dirhist_4='/data/home/wangxiaomo/shire/luzong/doumail'
-let g:netrw_dirhist_5='/Users/wangxiaomo/Github/douban/shire/docs/user'
-let g:netrw_dirhist_6='/home/wangxiaomo/.vim'
