@@ -18,8 +18,6 @@ export LANG='zh_CN.UTF-8'
 alias drm='docker rm $(docker ps -a -q)'
 alias dri='docker rmi '
 
-. ~/.vendor
-
 # pyenv setup
 export PYENV_ROOT="${HOME}/.pyenv"
 if [ -d "${PYENV_ROOT}" ]; then
