@@ -76,3 +76,6 @@
 [submodule "packages/vim/bundle/json-formatter.vim"]
 	path = packages/vim/bundle/json-formatter.vim
 	url = https://github.com/vim-scripts/json-formatter.vim
+[submodule "packages/zsh/zsh-completions"]
+	path = packages/zsh/zsh-completions
+	url = git://github.com/zsh-users/zsh-completions.git
