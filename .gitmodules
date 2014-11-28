@@ -79,3 +79,6 @@
 [submodule "packages/zsh/zsh-completions"]
 	path = packages/zsh/zsh-completions
 	url = git://github.com/zsh-users/zsh-completions.git
+[submodule "packages/vim/bundle/scss-syntax.vim"]
+	path = packages/vim/bundle/scss-syntax.vim
+	url = https://github.com/cakebaker/scss-syntax.vim

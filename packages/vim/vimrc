@@ -81,9 +81,9 @@ autocmd FileType jade,smarty set sw=2 ts=2 expandtab
 autocmd FileType vim set sw=2 ts=2 expandtab
 autocmd FileType ruby set sw=2 ts=2 expandtab
 au BufNewFile,BufReadPost *.coffee setl sw=2 ts=2 expandtab
-au BufNewFile,BufReadPost *.json setl ft=javascript
-au BufNewFile,BufReadPost *.pac setl ft=javascript
-au BufNewFile,BufReadPost *.scss setl ft=css
+au BufNewFile,BufReadPost *.json setl ft=javascript sw=2 ts=2
+au BufNewFile,BufReadPost *.pac setl ft=javascript sw=2 ts=2
+au BufNewFile,BufReadPost *.scss setl ft=scss sw=2 ts=2
 
 command PlzW w !sudo tee %
 command Flake8 call Flake8()

@@ -1,0 +1,2 @@
+alias dev='ssh wangxiaomo@192.168.166.35'
+alias aws='ssh wangxiaomo@54.169.158.14'
