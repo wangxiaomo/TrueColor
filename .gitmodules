@@ -61,9 +61,6 @@
 [submodule "packages/zsh/base16-shell"]
 	path = packages/zsh/base16-shell
 	url = https://github.com/chriskempson/base16-shell
-[submodule "packages/vim/bundle/vimwiki"]
-	path = packages/vim/bundle/vimwiki
-	url = https://github.com/vim-scripts/vimwiki
 [submodule "packages/vim/bundle/vim-puppet"]
 	path = packages/vim/bundle/vim-puppet
 	url = https://github.com/rodjek/vim-puppet
@@ -79,3 +76,6 @@
 [submodule "packages/zsh/zsh-completions"]
 	path = packages/zsh/zsh-completions
 	url = git://github.com/zsh-users/zsh-completions.git
+[submodule "packages/vim/bundle/scss-syntax.vim"]
+	path = packages/vim/bundle/scss-syntax.vim
+	url = https://github.com/cakebaker/scss-syntax.vim

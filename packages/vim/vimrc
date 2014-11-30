@@ -57,6 +57,9 @@ let NERDTreeSortOrder=['^__\.py', '\/$', '*', '\.swp$', '\~$']
 let NERDTreeShowBookmarks=1
 let NERDTreeChDirMode=0
 let g:nerdtree_tabs_synchronize_view=1
+let g:ctrlp_root_markers = ['.svn', '.git', 'package.json', 'readme.md']
+let g:ctrlp_follow_symlinks = 1
+let g:ctrlp_default_input = 1
 let g:ctrlp_custom_ignore={
 \ 'dir': '\v[\/]\.(git|hg|svn)$',
 \ 'file': '\v\.(so|swp|pyc)$',
@@ -81,9 +84,9 @@ autocmd FileType jade,smarty set sw=2 ts=2 expandtab
 autocmd FileType vim set sw=2 ts=2 expandtab
 autocmd FileType ruby set sw=2 ts=2 expandtab
 au BufNewFile,BufReadPost *.coffee setl sw=2 ts=2 expandtab
-au BufNewFile,BufReadPost *.json setl ft=javascript
-au BufNewFile,BufReadPost *.pac setl ft=javascript
-au BufNewFile,BufReadPost *.scss setl ft=css
+au BufNewFile,BufReadPost *.json setl ft=javascript sw=2 ts=2
+au BufNewFile,BufReadPost *.pac setl ft=javascript sw=2 ts=2
+au BufNewFile,BufReadPost *.scss setl ft=scss sw=2 ts=2
 
 command PlzW w !sudo tee %
 command Flake8 call Flake8()

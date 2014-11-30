@@ -9,3 +9,5 @@
 [user]
 	name = wangxiaomo
 	email = wxm4ever@gmail.com
+[push]
+	default = simple
