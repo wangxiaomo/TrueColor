@@ -79,3 +79,6 @@
 [submodule "packages/vim/bundle/scss-syntax.vim"]
 	path = packages/vim/bundle/scss-syntax.vim
 	url = https://github.com/cakebaker/scss-syntax.vim
+[submodule "packages/vim/bundle/rust.vim"]
+	path = packages/vim/bundle/rust.vim
+	url = https://github.com/wting/rust.vim
