@@ -27,4 +27,4 @@ if [ -d "${PYENV_ROOT}" ]; then
     pyenv virtualenvwrapper
 fi
 
-. ~/.zsh_vhosts
+#. ~/.zsh_vhosts

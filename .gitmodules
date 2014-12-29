@@ -82,3 +82,6 @@
 [submodule "packages/vim/bundle/rust.vim"]
 	path = packages/vim/bundle/rust.vim
 	url = https://github.com/wting/rust.vim
+[submodule "packages/vim/bundle/emmet-vim"]
+	path = packages/vim/bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim
