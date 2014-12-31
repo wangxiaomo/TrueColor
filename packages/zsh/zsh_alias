@@ -1,25 +1,7 @@
-alias luz_f="mysql -hluz_m -uluzong -pfulllink luz_farm"
-alias orc_f="mysql -horc_m -P3308 -uluzong -pfulllink orc_farm"
-alias ent_f="mysql -hent_m -P3310 -uluzong -pfulllink luz_farm"
-alias elf_f="mysql -helf_m -P3307 -uluzong -pfulllink elf_farm"
-alias muk_f="mysql -hmuk_m -P3309 -uluzong -pfulllink luz_farm"
-alias urk_s='mysql -u eye -psauron -h urk_s -P 3311 orc_farm'
-alias rivendell="mysql -hbalin -uluzong -pfulllink -P4406 rivendell"
-alias rohan="mysql -hdwalin -uluzong -pfulllink rohan"
-alias anduin_f="mysql -handuin_m -P3315 -uanduin -pfulllink anduin"
-alias eag_f="mysql -heag_m -P3318 -uluzong -pfulllink luz_farm"
-alias bi_report_f="mysql -uluzong -pzoMcGcd7 -P4407 -h infobright report"
-alias algalon_f="mysql -u algalon -p6m1WagkqrC -hdae_m -P3320 algalon"
+# 因为这些翻过多少次错误?
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
 
-alias dev2='ssh wangxiaomo@doubandev2'
-alias fili='ssh wangxiaomo@fili'
-alias balin='ssh wangxiaomo@balin'
-alias theoden='ssh wangxiaomo@theoden'
-
-alias shire-env='source ~/douban/Code/shire-env-osx64/bin/activate'
-alias makeweb='make web && make fillup_sns_site'
-alias maketail='make tail'
-alias restartcache='make restartcache'
-
-alias rivendell='mysql -ueye -psauron -P4406 -h balin rivendell'
-alias eye_orc='mysql --host="urk_b" --user="eye" --password="sauron" --port=3311 orc_farm'
+# alias
+alias todo='vi /Users/wangxiaomo/\!IMPORTANT\!/2015.md'
