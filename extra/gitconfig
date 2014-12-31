@@ -6,6 +6,14 @@
 	co = checkout
 	br = branch
 	reflog = reflog show master
+	switch = !legit switch \"$@\"
+	branches = !legit branches
+	sprout = !legit sprout \"$@\"
+	unpublish = !legit unpublish \"$@\"
+	harvest = !legit harvest \"$@\"
+	sync = !legit sync \"$@\"
+	publish = !legit publish \"$@\"
+	graft = !legit graft \"$@\"
 [user]
 	name = wangxiaomo
 	email = wxm4ever@gmail.com
