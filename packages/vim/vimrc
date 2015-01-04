@@ -33,7 +33,7 @@ set fencs=utf-8,cp936
 set backspace=indent,eol,start
 set keywordprg=:help
 set guioptions=m
-set gfn="Source Code pro Semibold:h12"
+set gfn=Inconsolata:h12
 
 set background=dark
 let base16colorspace=256
