@@ -13,7 +13,8 @@ unsetopt correct_all
 
 export VISUAL='vim'
 export EDITOR='vim'
-export LANG='zh_CN.UTF-8'
+export LANG='en_US.UTF-8'
+export LC_CTYPE='en_US.UTF-8'
 
 # pyenv setup
 export PYENV_ROOT="${HOME}/.pyenv"
