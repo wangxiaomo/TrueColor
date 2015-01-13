@@ -13,6 +13,7 @@ set number
 set showmode
 set showcmd
 set showmatch
+set nowrap
 
 set hlsearch
 set ignorecase
