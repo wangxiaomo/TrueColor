@@ -61,6 +61,7 @@ let g:nerdtree_tabs_synchronize_view=1
 let g:ctrlp_root_markers = ['.svn', '.git', 'package.json', 'readme.md']
 let g:ctrlp_follow_symlinks = 1
 let g:ctrlp_default_input = 1
+let g:ctrlp_working_path_mode = 'c'
 let g:ctrlp_custom_ignore={
 \ 'dir': '\v[\/]\.(git|hg|svn)$',
 \ 'file': '\v\.(so|swp|pyc)$',

@@ -5,8 +5,6 @@ ZSH_THEME="bira"
 fpath=(~/.zsh-completions $fpath)
 source $ZSH/oh-my-zsh.sh
 
-. ~/.incr.zsh
-
 bindkey -e
 PROMPT="%{$fg[magenta]%}(${USER})%{$reset_color%}${current_dir} %{$fg[yellow]%}@dev%{$reset_color%} ${git_branch}%B%%%b "
 unsetopt correct_all
