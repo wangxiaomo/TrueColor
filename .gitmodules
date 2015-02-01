@@ -85,3 +85,6 @@
 [submodule "packages/vim/bundle/emmet-vim"]
 	path = packages/vim/bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim
+[submodule "packages/vim/bundle/vim-cursorword"]
+	path = packages/vim/bundle/vim-cursorword
+	url = https://github.com/vim-scripts/vim-cursorword
