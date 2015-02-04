@@ -24,3 +24,5 @@ fi
 
 . ~/.zsh_vhosts
 . ~/.zsh_alias
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
