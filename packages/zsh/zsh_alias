@@ -1,7 +1,24 @@
-# 因为这些翻过多少次错误?
+# 因为这些犯过多少次错误?
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
-# alias
-alias todo='vi /Users/wangxiaomo/\!IMPORTANT\!/2015.md'
+if [ "$TERM" = "linux" ]; then
+    echo -en "\e]P0000000" #black
+    echo -en "\e]P8282828" #darkgrey
+    echo -en "\e]P1AB4642" #darkred
+    echo -en "\e]P9AB4642" #red
+    echo -en "\e]P2A1B56C" #darkgreen
+    echo -en "\e]PA35EB35" #green
+    echo -en "\e]P3DC9656" #brown
+    echo -en "\e]PBF7CA88" #yellow
+    echo -en "\e]P41EAEE4" #darkblue
+    echo -en "\e]PC7CAFC2" #blue
+    echo -en "\e]P5BA8BAF" #darkmagenta
+    echo -en "\e]PDBA8BAF" #magenta
+    echo -en "\e]P686C1DF" #darkcyan
+    echo -en "\e]PE86C1B9" #cyan
+    echo -en "\e]P7E8E8E8" #lightgrey
+    echo -en "\e]PFF8F8F8" #white
+    clear #for background artifacting
+fi
