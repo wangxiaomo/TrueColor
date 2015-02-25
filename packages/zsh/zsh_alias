@@ -3,6 +3,12 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+UBUNTU=`uname -v | grep -i ubuntu`
+if [ $UBUNTU ]; then
+    alias node='nodejs'
+    alias ack='ack-grep'
+fi
+
 if [ "$TERM" = "linux" ]; then
     echo -en "\e]P0000000" #black
     echo -en "\e]P8282828" #darkgrey
