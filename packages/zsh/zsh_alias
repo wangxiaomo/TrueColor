@@ -7,6 +7,9 @@ UBUNTU=`uname -v | grep -i ubuntu`
 if [ $UBUNTU ]; then
     alias node='nodejs'
     alias ack='ack-grep'
+    if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+        source /usr/local/bin/virtualenvwrapper.sh
+    fi
 fi
 
 if [ "$TERM" = "linux" ]; then
