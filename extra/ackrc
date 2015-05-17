@@ -1,18 +1,8 @@
+--ignore-directory=is:node_modules
+--ignore-directory=is:runtime
+--ignore-directory=is:Runtime
 
-# Always color, even if piping to a another program
---color
+--ignore-file=ext:map
+--ignore-file=match:/[.-]min\.js$/
 
-# only search with case sensitivity if there is mixed case
---smart-case
-
-# dont follow symlinks.
-
---ignore-dir=node_modules/
-
-# make sure ack knows how to search common filetypes
---type-add=css=scss
---type-add=ruby=.haml,.rselm,.feature,.ru,.lock
---type-set=coffeescript=.coffee
---type-set=coffee=.coffee
---type-set=jade=.jade
---type-set=json=.json
+--ignore-case
