@@ -1,2 +1,2 @@
 alias dev='ssh wangxiaomo@192.168.166.35'
-alias kickass='ssh wangxiaomo@101.200.178.203'
+alias kickass='ssh aliyun@101.200.178.203'
