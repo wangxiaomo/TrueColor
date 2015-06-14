@@ -89,3 +89,6 @@
 [submodule "packages/vim/bundle/vim-cursorword"]
 	path = packages/vim/bundle/vim-cursorword
 	url = https://github.com/vim-scripts/vim-cursorword
+[submodule "packages/vim/bundle/vim-swift"]
+	path = packages/vim/bundle/vim-swift
+	url = https://github.com/toyamarinyon/vim-swift
