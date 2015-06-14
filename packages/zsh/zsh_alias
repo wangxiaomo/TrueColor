@@ -12,6 +12,11 @@ if [ $UBUNTU ]; then
     fi
 fi
 
+MACOSX=`uname -v | grep -i Darwin`
+if [ $MACOSX ]; then
+    alias swift='xcrun swift'
+fi
+
 if [ "$TERM" = "linux" ]; then
     echo -en "\e]P0000000" #black
     echo -en "\e]P8282828" #darkgrey
