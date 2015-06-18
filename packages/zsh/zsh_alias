@@ -3,6 +3,8 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+alias -g V='| vim -'
+
 UBUNTU=`uname -v | grep -i ubuntu`
 if [ $UBUNTU ]; then
     alias node='nodejs'
