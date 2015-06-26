@@ -4,6 +4,8 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias iftop='sudo /usr/local/Cellar/iftop/1.0pre4/sbin/iftop'
 
+alias -g V='| vim -'
+
 UBUNTU=`uname -v | grep -i ubuntu`
 if [ $UBUNTU ]; then
     alias node='nodejs'
@@ -11,6 +13,11 @@ if [ $UBUNTU ]; then
     if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
         source /usr/local/bin/virtualenvwrapper.sh
     fi
+fi
+
+MACOSX=`uname -v | grep -i Darwin`
+if [ $MACOSX ]; then
+    alias swift='xcrun swift'
 fi
 
 if [ "$TERM" = "linux" ]; then
