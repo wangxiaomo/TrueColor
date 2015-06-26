@@ -2,6 +2,7 @@
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+alias iftop='sudo /usr/local/Cellar/iftop/1.0pre4/sbin/iftop'
 
 UBUNTU=`uname -v | grep -i ubuntu`
 if [ $UBUNTU ]; then
