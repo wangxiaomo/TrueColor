@@ -92,3 +92,6 @@
 [submodule "packages/vim/bundle/vim-swift"]
 	path = packages/vim/bundle/vim-swift
 	url = https://github.com/toyamarinyon/vim-swift
+[submodule "packages/vim/bundle/ctrlp-locate"]
+	path = packages/vim/bundle/ctrlp-locate
+	url = https://github.com/vim-scripts/ctrlp-locate
