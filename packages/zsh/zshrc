@@ -29,6 +29,10 @@ if [ -d "${RBENV_ROOT}" ]; then
     eval "$(rbenv init -)"
 fi
 
+if [ -d "/Users/wangxiaomo/.composer/vendor/bin" ]; then
+    export PATH="/Users/wangxiaomo/.composer/vendor/bin:$PATH"
+fi
+
 if [ -d "~/.oh-my-zsh/custom/plugins/zsh-completions" ]; then
     autoload -U compinit && compinit
 fi
