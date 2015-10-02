@@ -9,7 +9,7 @@ syntax on
 
 set mouse=a
 set ruler
-set number
+set relativenumber
 set showmode
 set showcmd
 set showmatch
