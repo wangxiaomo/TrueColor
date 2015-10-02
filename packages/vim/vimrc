@@ -97,7 +97,7 @@ set completeopt-=preview
 
 set cursorline
 
-colorscheme molokai
+colorscheme molokai-transparent
 
 hi SpellBad guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
 hi SpellCap guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
