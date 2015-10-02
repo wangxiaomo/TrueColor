@@ -2,4 +2,5 @@
 packages/vim/.netrwhist
 packages/vim/bundle/vimwiki/doc/tags
 .DS_Store
-packages/vim/doc/*
+packages/vim/doc
+packages/vim/colors
