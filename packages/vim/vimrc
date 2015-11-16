@@ -23,6 +23,7 @@ Plugin 'mhinz/vim-signify'
 Plugin 'leshill/vim-json'
 Plugin 'honza/vim-snippets'
 Plugin 'tyru/open-browser.vim'
+Plugin 'Shougo/neocomplcache.vim'
 call vundle#end()
 filetype plugin indent on
 set completeopt-=preview
@@ -94,6 +95,8 @@ let g:ctrlp_use_caching=1
 let g:miniBufExplorerAutoStart=0
 let g:airline#extensions#tabline#enabled=1
 let g:airline_theme='badwolf'
+let g:neocomplcache_enable_at_startup=1
+let g:neocomplcache_min_syntax_length=3
 
 autocmd FileType php,python,perl,markdown set sw=4 ts=4 expandtab
 autocmd FileType vim,ruby,javascript,html,css,jade,smarty set sw=2 ts=2 expandtab
@@ -110,3 +113,4 @@ hi SpellBad guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
 hi SpellCap guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
 hi IncSearch guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
 hi Search guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
+hi MatchParen guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
