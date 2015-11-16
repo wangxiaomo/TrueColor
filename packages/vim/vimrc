@@ -19,6 +19,10 @@ Plugin 'vim-scripts/vim-cursorword'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-surround'
 Plugin 'tomasr/molokai'
+Plugin 'mhinz/vim-signify'
+Plugin 'leshill/vim-json'
+Plugin 'honza/vim-snippets'
+Plugin 'tyru/open-browser.vim'
 call vundle#end()
 filetype plugin indent on
 set completeopt-=preview

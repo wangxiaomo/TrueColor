@@ -1,6 +1,5 @@
 *.swp
-packages/vim/.netrwhist
-packages/vim/bundle/vimwiki/doc/tags
-.DS_Store
-packages/vim/doc
-packages/vim/colors
+packages/zsh/oh-my-zsh
+packages/zsh/zsh-completions
+packages/vim/bundle/
+!packages/vim/bundle/Vundle.vim
