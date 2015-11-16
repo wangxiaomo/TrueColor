@@ -113,4 +113,4 @@ hi SpellBad guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
 hi SpellCap guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
 hi IncSearch guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
 hi Search guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
-hi MatchParen guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
+hi Pmenu           guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
