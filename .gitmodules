@@ -1,90 +1,18 @@
 [submodule "packages/zsh/oh-my-zsh"]
 	path = packages/zsh/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "packages/vim/bundle/nerdtree"]
-	path = packages/vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "packages/vim/bundle/vim-nerdtree-tabs"]
-	path = packages/vim/bundle/vim-nerdtree-tabs
-	url = https://github.com/jistr/vim-nerdtree-tabs.git
-[submodule "packages/vim/bundle/ctrlp.vim"]
-	path = packages/vim/bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim
-[submodule "packages/vim/bundle/vim-markdown"]
-	path = packages/vim/bundle/vim-markdown
-	url = https://github.com/tpope/vim-markdown.git
-[submodule "packages/vim/bundle/vim-coffee-script"]
-	path = packages/vim/bundle/vim-coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "packages/vim/bundle/vim-css-color"]
-	path = packages/vim/bundle/vim-css-color
-	url = https://github.com/ap/vim-css-color
-[submodule "packages/vim/bundle/ack.vim"]
-	path = packages/vim/bundle/ack.vim
-    url = https://github.com/mileszs/ack.vim.git
-[submodule "packages/vim/bundle/neocomplcache"]
-	path = packages/vim/bundle/neocomplcache
-	url = https://github.com/Shougo/neocomplcache
-[submodule "packages/vim/bundle/tagbar"]
-	path = packages/vim/bundle/tagbar
-	url = https://github.com/majutsushi/tagbar
-[submodule "packages/vim/bundle/vim-nerdcommenter"]
-	path = packages/vim/bundle/vim-nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter
-[submodule "packages/vim/bundle/python.vim"]
-	path = packages/vim/bundle/python.vim
-	url = https://github.com/vim-scripts/python.vim
-[submodule "packages/vim/bundle/vim-bundle-mako"]
-	path = packages/vim/bundle/vim-bundle-mako
-	url = https://github.com/sophacles/vim-bundle-mako
-[submodule "packages/vim/bundle/vim-slim"]
-	path = packages/vim/bundle/vim-slim
-	url = https://github.com/slim-template/vim-slim
-[submodule "packages/vim/bundle/vim-flake8"]
-	path = packages/vim/bundle/vim-flake8
-	url = https://github.com/nvie/vim-flake8
-[submodule "packages/vim/bundle/vim-javascript"]
-	path = packages/vim/bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript
-[submodule "packages/vim/bundle/syntastic"]
-	path = packages/vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic
 [submodule "packages/zsh/base16-shell"]
 	path = packages/zsh/base16-shell
 	url = https://github.com/chriskempson/base16-shell
-[submodule "packages/vim/bundle/nginx-vim-syntax"]
-	path = packages/vim/bundle/nginx-vim-syntax
-	url = https://github.com/evanmiller/nginx-vim-syntax
-[submodule "packages/vim/bundle/Dockerfile.vim"]
-	path = packages/vim/bundle/Dockerfile.vim
-	url = https://github.com/ekalinin/Dockerfile.vim
-[submodule "packages/vim/bundle/json-formatter.vim"]
-	path = packages/vim/bundle/json-formatter.vim
-	url = https://github.com/vim-scripts/json-formatter.vim
 [submodule "packages/zsh/zsh-completions"]
 	path = packages/zsh/zsh-completions
 	url = git://github.com/zsh-users/zsh-completions.git
-[submodule "packages/vim/bundle/scss-syntax.vim"]
-	path = packages/vim/bundle/scss-syntax.vim
-	url = https://github.com/cakebaker/scss-syntax.vim
-[submodule "packages/vim/bundle/emmet-vim"]
-	path = packages/vim/bundle/emmet-vim
-	url = https://github.com/mattn/emmet-vim
-[submodule "packages/vim/bundle/vim-cursorword"]
-	path = packages/vim/bundle/vim-cursorword
-	url = https://github.com/vim-scripts/vim-cursorword
-[submodule "packages/vim/bundle/ctrlp-locate"]
-	path = packages/vim/bundle/ctrlp-locate
-	url = https://github.com/vim-scripts/ctrlp-locate
 [submodule "packages/base16-vim"]
 	path = packages/base16-vim
 	url = https://github.com/chriskempson/base16-vim
 [submodule "packages/base16-shell"]
 	path = packages/base16-shell
 	url = https://github.com/chriskempson/base16-shell
-[submodule "packages/vim/bundle/vim-airline"]
-	path = packages/vim/bundle/vim-airline
-	url = https://github.com/bling/vim-airline
 [submodule "packages/vim/bundle/Vundle.vim"]
 	path = packages/vim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim
