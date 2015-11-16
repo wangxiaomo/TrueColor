@@ -1,18 +1,9 @@
 [submodule "packages/zsh/oh-my-zsh"]
 	path = packages/zsh/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "packages/zsh/base16-shell"]
-	path = packages/zsh/base16-shell
-	url = https://github.com/chriskempson/base16-shell
 [submodule "packages/zsh/zsh-completions"]
 	path = packages/zsh/zsh-completions
 	url = git://github.com/zsh-users/zsh-completions.git
-[submodule "packages/base16-vim"]
-	path = packages/base16-vim
-	url = https://github.com/chriskempson/base16-vim
-[submodule "packages/base16-shell"]
-	path = packages/base16-shell
-	url = https://github.com/chriskempson/base16-shell
 [submodule "packages/vim/bundle/Vundle.vim"]
 	path = packages/vim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim

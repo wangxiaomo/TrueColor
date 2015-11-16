@@ -14,9 +14,6 @@ export EDITOR='vim'
 export LANG='en_US.UTF-8'
 export LC_CTYPE='en_US.UTF-8'
 
-BASE16_SHELL="$HOME/.base16-shell/base16-colors.dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
-
 export PATH="/usr/local/sbin:$PATH"
 
 # pyenv setup

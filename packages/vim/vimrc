@@ -1,19 +1,39 @@
 set nocompatible
 source $VIMRUNTIME/ftplugin/man.vim
 
-call pathogen#infect()
-call pathogen#helptags()
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'majutsushi/tagbar'
+Plugin 'bling/vim-airline'
+Plugin 'sjl/gundo.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'ap/vim-css-color'
+Plugin 'mileszs/ack.vim'
+Plugin 'vim-scripts/vim-cursorword'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'tpope/vim-surround'
+Plugin 'tomasr/molokai'
+call vundle#end()
+filetype plugin indent on
+set completeopt-=preview
 
 let mapleader=','
 syntax on
 
 set mouse=a
 set ruler
-set relativenumber
+set number
 set showmode
 set showcmd
 set showmatch
 set nowrap
+set cursorline
 
 set hlsearch
 set ignorecase
@@ -66,22 +86,12 @@ let g:ctrlp_custom_ignore={
 \ 'file': '\v\.(so|swp|pyc)$',
 \}
 let g:ctrlp_use_caching=1
-let g:neocomplcache_enable_at_startup=1
-let g:neocomplcache_enable_smart_case=1
-let g:neocomplcache_min_syntax_length=2
-let g:neocomplcache_enable_underbar_completion=1
 let g:miniBufExplorerAutoStart=0
-let g:flake8_ignore="E501,E128,W291,W293"
-let g:flake8_max_line_length=99
-let g:syntastic_python_checkers = ['pyflakes']
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_mode_map={"mode": "passive"}
+let g:airline#extensions#tabline#enabled=1
+let g:airline_theme='badwolf'
 
 autocmd FileType php,python,perl,markdown set sw=4 ts=4 expandtab
-autocmd FileType javascript,html,css set sw=2 ts=2 expandtab
-autocmd FileType jade,smarty set sw=2 ts=2 expandtab
-autocmd FileType vim set sw=2 ts=2 expandtab
-autocmd FileType ruby set sw=2 ts=2 expandtab
+autocmd FileType vim,ruby,javascript,html,css,jade,smarty set sw=2 ts=2 expandtab
 au BufNewFile,BufReadPost *.yml setl sw=2 ts=2 expandtab
 au BufNewFile,BufReadPost *.coffee setl sw=2 ts=2 expandtab
 au BufNewFile,BufReadPost *.json setl ft=javascript sw=2 ts=2
@@ -90,12 +100,6 @@ au BufNewFile,BufReadPost *.scss,*.sass setl ft=scss sw=2 ts=2
 au BufNewFile,BufReadPost *.slim setl ft=scss sw=2 ts=2
 
 command PlzW w !sudo tee %
-command Flake8 call Flake8()
-
-filetype plugin on
-set completeopt-=preview
-
-set cursorline
 
 colorscheme molokai-transparent
 

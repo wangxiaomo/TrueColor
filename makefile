@@ -10,5 +10,3 @@ setup:
 	ln -sf `pwd`/packages/zsh/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
 	ln -sf `pwd`/extra/ackrc ~/.ackrc
 	ln -sf `pwd`/extra/gitconfig ~/.gitconfig
-	cp `pwd`/packages/base16-vim/colors/* ~/.vim/colors/
-	ln -sf `pwd`/packages/base16-shell ~/.base16-shell
