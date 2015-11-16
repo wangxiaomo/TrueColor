@@ -58,6 +58,7 @@ set gfn=Inconsolata:h12
 
 set background=dark
 let base16colorspace=256
+colorscheme molokai
 
 if has("autocmd")
   au BufReadPost * if line("'\"")>1 && line("'\"")<=line("$") | exe "normal! g'\"" | endif
@@ -100,8 +101,6 @@ au BufNewFile,BufReadPost *.scss,*.sass setl ft=scss sw=2 ts=2
 au BufNewFile,BufReadPost *.slim setl ft=scss sw=2 ts=2
 
 command PlzW w !sudo tee %
-
-colorscheme molokai-transparent
 
 hi SpellBad guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
 hi SpellCap guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
