@@ -10,3 +10,6 @@ setup:
 	ln -sf `pwd`/packages/zsh/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
 	ln -sf `pwd`/extra/ackrc ~/.ackrc
 	ln -sf `pwd`/extra/gitconfig ~/.gitconfig
+
+	mkdir -p ~/.config/nvim
+	ln -sf `pwd`/packages/vim/vimrc ~/.config/nvim/init.vim
