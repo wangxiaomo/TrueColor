@@ -78,6 +78,7 @@ map  <leader>t :Tagbar<CR>
 map  <C-w>n    :tabnew<CR>
 vnoremap < <gv
 vnoremap > >gv
+tnoremap <Esc> <C-\><C-n>
 
 let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$', '\.swp$']
 let NERDTreeSortOrder=['^__\.py', '\/$', '*', '\.swp$', '\~$']
