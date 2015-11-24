@@ -6,7 +6,7 @@ alias ls='ls --color'
 source $ZSH/oh-my-zsh.sh
 
 bindkey -e
-PROMPT="%{$fg[magenta]%}(${USER})%{$reset_color%}${current_dir} %{$fg[yellow]%}@dev%{$reset_color%} ${git_branch}%B%%%b "
+PROMPT="%(?.%{$fg[green]%}✔%{$reset_color%}.%{$fg[red]%}✖%{$reset_color%}) %{$fg[magenta]%}(${USER})%{$reset_color%}${current_dir} %{$fg[yellow]%}@dev%{$reset_color%} ${git_branch}%B%%%b "
 unsetopt correct_all
 
 export VISUAL='vim'
