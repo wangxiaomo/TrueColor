@@ -31,7 +31,7 @@ set completeopt-=preview
 let mapleader=','
 syntax on
 
-set mouse=a
+set mouse=r
 set ruler
 set number
 set showmode
