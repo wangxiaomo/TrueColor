@@ -23,6 +23,7 @@ Plugin 'leshill/vim-json'
 Plugin 'honza/vim-snippets'
 Plugin 'tyru/open-browser.vim'
 Plugin 'Shougo/neocomplcache.vim'
+Plugin 'vim-scripts/nginx.vim'
 call vundle#end()
 filetype plugin indent on
 set completeopt-=preview
@@ -100,6 +101,7 @@ let g:airline_theme='badwolf'
 let g:neocomplcache_enable_at_startup=1
 let g:neocomplcache_min_syntax_length=3
 
+autocmd BufRead,BufNewFile /etc/nginx/* set ft=nginx
 autocmd FileType php,python,perl,markdown set sw=4 ts=4 expandtab
 autocmd FileType vim,ruby,javascript,html,css,jade,smarty set sw=2 ts=2 expandtab
 au BufNewFile,BufReadPost *.yml setl sw=2 ts=2 expandtab
