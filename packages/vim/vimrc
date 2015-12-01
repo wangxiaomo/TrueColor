@@ -25,6 +25,7 @@ Plugin 'tyru/open-browser.vim'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'vim-scripts/nginx.vim'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'vim-scripts/Emmet.vim'
 call vundle#end()
 filetype plugin indent on
 set completeopt-=preview
