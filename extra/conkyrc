@@ -89,7 +89,7 @@ RAM Used: ${mem}    RAM Free: ${memfree}/ ${memmax}
 RAM: $memperc%  ${color4} ${membar 6}$color
 
 ${color1}DISK ${hr 2}$color
-ROOT ${fs_type}: ${fs_free_perc /}% ${color5} ${fs_bar 6 /}$color
+ROOT ${fs_type}: ${fs_used_perc /}% ${color5} ${fs_bar 6 /}$color
 
 ${color1}NETWORK (${addr enp0s25}) ${hr 2}$color
 Down: $color${downspeed enp0s25}/s ${alignr}Up: ${upspeed enp0s25}/s
