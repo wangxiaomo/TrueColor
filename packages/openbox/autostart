@@ -16,8 +16,9 @@
 #
 #xfce-mcs-manager &
 
-feh --bg-scale /home/wangxiaomo/Downloads/dsgl.jpg # 设置桌面
+feh --bg-scale /home/wangxiaomo/Downloads/background.jpg # 设置桌面
 xcompmgr& # 窗口透明管理，配合 transset-df
 fcitx& # 输入法
 tint2& # dock
 nm-applet& # 网络管理
+conky&
