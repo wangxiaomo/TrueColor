@@ -24,6 +24,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'tyru/open-browser.vim'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'vim-scripts/nginx.vim'
+Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'vim-scripts/Emmet.vim'
 call vundle#end()
 filetype plugin indent on
@@ -112,7 +113,7 @@ au BufNewFile,BufReadPost *.pac setl ft=javascript sw=2 ts=2
 au BufNewFile,BufReadPost *.scss,*.sass setl ft=scss sw=2 ts=2
 au BufNewFile,BufReadPost *.slim setl ft=scss sw=2 ts=2
 
-command PlzW w !sudo tee %
+command! PlzW w !sudo tee %
 
 hi SpellBad guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
 hi SpellCap guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
