@@ -38,7 +38,7 @@ set number
 set showmode
 set showcmd
 set showmatch
-set nowrap
+set wrap
 set cursorline
 
 set hlsearch
