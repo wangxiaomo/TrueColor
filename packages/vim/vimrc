@@ -61,7 +61,8 @@ set fencs=utf-8,cp936
 set backspace=indent,eol,start
 set keywordprg=:help
 set guioptions=m
-set gfn=Inconsolata:h12
+"set gfn=Inconsolata:h9
+set gfn=Lucida_Console:h9
 
 set background=dark
 let base16colorspace=256
