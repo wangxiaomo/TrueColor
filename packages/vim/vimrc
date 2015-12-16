@@ -63,7 +63,7 @@ set expandtab
 set fencs=utf-8,cp936
 set backspace=indent,eol,start
 set keywordprg=:help
-set guioptions=m
+set guioptions=''
 "set gfn=Inconsolata:h9
 set gfn=Lucida_Console:h9
 
