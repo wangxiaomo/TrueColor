@@ -26,6 +26,7 @@ Plugin 'Shougo/neocomplcache.vim'
 Plugin 'vim-scripts/nginx.vim'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'vim-scripts/Emmet.vim'
+Plugin 'unblevable/quick-scope'
 call vundle#end()
 filetype plugin indent on
 set completeopt-=preview
@@ -41,6 +42,8 @@ set showcmd
 set showmatch
 set wrap
 set cursorline
+set history=2000
+set t_ti= t_te=
 
 set hlsearch
 set ignorecase
