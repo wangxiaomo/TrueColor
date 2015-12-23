@@ -3,6 +3,7 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias vi='vim'
+alias free='free -h'
 alias iftop='sudo /usr/local/Cellar/iftop/1.0pre4/sbin/iftop'
 
 alias -g V='| vim -'
