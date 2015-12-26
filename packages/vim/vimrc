@@ -8,7 +8,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'majutsushi/tagbar'
 Plugin 'bling/vim-airline'
 Plugin 'sjl/gundo.vim'
 Plugin 'kien/ctrlp.vim'
@@ -81,7 +80,6 @@ map  <leader>2 :tabn 2<CR>
 map  <leader>3 :tabn 3<CR>
 map  <leader>4 :tabn 4<CR>
 map  <leader>e :NERDTreeTabsToggle<CR>
-map  <leader>t :Tagbar<CR>
 map  <C-w>n    :tabnew<CR>
 vnoremap < <gv
 vnoremap > >gv
