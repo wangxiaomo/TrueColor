@@ -1,5 +1,6 @@
 *.swp
 .DS_Store
+.env
 packages/zsh/oh-my-zsh
 packages/zsh/zsh-completions
 packages/vim/bundle/
