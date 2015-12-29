@@ -1,5 +1,5 @@
 alias dev='ssh wangxiaomo@192.168.111.250'
 alias bmzx='ssh wangxiaomo@123.57.211.8'
-alias 5thelement='ssh wangxiaomo@120.25.154.116'
-alias p2p='ssh wangxiaomo@dev.gaoshigao.com'
+alias 5thelement='ssh wangxiaomo@www.5thelement.cn'
+alias p2p='ssh wangxiaomo@www.sxwtybd.com'
 alias funstudy='ssh wangxiaomo@dev.51funstudy.com'
