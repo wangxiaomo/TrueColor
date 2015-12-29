@@ -4,6 +4,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias vi='vim'
 alias free='free -h'
+alias reload='source ~/.zshrc'
 alias db="mysql -h$db_host -u$db_user -p$db_pass"
 alias git_rm_untrack_files="git st | awk '{print $2}' | xargs rm -rf"
 alias dotfiles="cd $code_base/TrueColor"
