@@ -43,3 +43,4 @@ fi
 
 . ~/.zsh_vhosts
 . ~/.zsh_alias
+. ~/.z-jump/z.sh

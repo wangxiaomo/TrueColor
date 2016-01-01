@@ -7,3 +7,6 @@
 [submodule "packages/vim/bundle/Vundle.vim"]
 	path = packages/vim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim
+[submodule "packages/zsh/z"]
+	path = packages/zsh/z
+	url = https://github.com/rupa/z
