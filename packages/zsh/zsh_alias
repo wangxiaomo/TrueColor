@@ -10,7 +10,8 @@ alias dotfiles="cd $code_base/TrueColor"
 alias reload="dotfiles && make && source ~/.zshrc"
 
 alias -g V='| vim -'
-alias -g v='| vim -'
+alias v='f -e vim'
+alias o='o -e firefox'
 
 UBUNTU=`uname -v | grep -i ubuntu`
 if [ $UBUNTU ]; then
