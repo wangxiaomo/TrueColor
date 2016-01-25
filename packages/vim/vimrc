@@ -28,6 +28,8 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'vim-scripts/Emmet.vim'
 Plugin 'unblevable/quick-scope'
 Plugin 'Raimondi/delimitMate'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'StanAngeloff/php.vim'
 call vundle#end()
 filetype on
 set completeopt-=preview
@@ -83,6 +85,8 @@ map  <leader>3 :tabn 3<CR>
 map  <leader>4 :tabn 4<CR>
 map  <leader>e :NERDTreeTabsToggle<CR>
 map  <C-w>n    :tabnew<CR>
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 vnoremap < <gv
 vnoremap > >gv
 if exists(":tnoremap")
