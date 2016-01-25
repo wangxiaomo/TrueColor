@@ -1,4 +1,7 @@
-#!/bin/bash
-#xrandr --prop
-xrandr --output eDP1 --mode 1366x768 --output DP2 --mode 1920x1080 --right-of eDP1
-feh --bg-scale /home/wangxiaomo/code/TrueColor/extra/background.jpg
+two:
+	xrandr --output DP2 --mode 1920x1080_60.00 --output DP1 --mode 1920x1080 --right-of DP2
+	feh --bg-scale /home/wangxiaomo/code/TrueColor/extra/background.jpg
+
+three:
+	xrandr --output DP2 --mode 1920x1080_60.00 --output eDP1 --mode 1366x768 --right-of DP2 --output DP1 --mode 1920x1080 --right-of eDP1
+	feh --bg-scale /home/wangxiaomo/code/TrueColor/extra/background.jpg
