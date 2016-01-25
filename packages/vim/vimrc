@@ -11,6 +11,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'bling/vim-airline'
 Plugin 'sjl/gundo.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'hail2u/vim-css3-syntax'
 Plugin 'ap/vim-css-color'
 Plugin 'mileszs/ack.vim'
 Plugin 'vim-scripts/vim-cursorword'
@@ -26,8 +27,9 @@ Plugin 'vim-scripts/nginx.vim'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'vim-scripts/Emmet.vim'
 Plugin 'unblevable/quick-scope'
+Plugin 'Raimondi/delimitMate'
 call vundle#end()
-filetype plugin indent on
+filetype on
 set completeopt-=preview
 
 let mapleader=','
