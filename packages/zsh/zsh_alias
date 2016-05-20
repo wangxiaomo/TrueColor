@@ -7,6 +7,7 @@ alias free='free -h'
 alias db="mysql -h$db_host -u$db_user -p$db_pass"
 alias git_rm_untrack_files="git st | grep '^?' | awk '{print $2}' | xargs rm -rf"
 alias dotfiles="cd $code_base/TrueColor"
+alias project="cd $project_base"
 alias reload="dotfiles && make && source ~/.zshrc"
 
 alias -g V='| vim -'
