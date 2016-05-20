@@ -9,6 +9,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'sjl/gundo.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'hail2u/vim-css3-syntax'
@@ -71,9 +72,11 @@ set guioptions=''
 "set gfn=Inconsolata:h9
 set gfn=Lucida_Console:h9
 
-set background=dark
 let base16colorspace=256
-colorscheme molokai
+"set background=dark
+"colorscheme molokai
+"let g:airline_theme='badwolf'
+let g:airline_theme='light'
 
 if has("autocmd")
   au BufReadPost * if line("'\"")>1 && line("'\"")<=line("$") | exe "normal! g'\"" | endif
@@ -108,7 +111,6 @@ let g:ctrlp_custom_ignore={
 let g:ctrlp_use_caching=1
 let g:miniBufExplorerAutoStart=0
 let g:airline#extensions#tabline#enabled=1
-let g:airline_theme='badwolf'
 let g:neocomplcache_enable_at_startup=1
 let g:neocomplcache_min_syntax_length=3
 
