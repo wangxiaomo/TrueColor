@@ -73,9 +73,8 @@ set guioptions=''
 set gfn=Lucida_Console:h9
 
 let base16colorspace=256
-"set background=dark
-"colorscheme molokai
-"let g:airline_theme='badwolf'
+set background=dark
+colorscheme molokai
 let g:airline_theme='light'
 
 if has("autocmd")
