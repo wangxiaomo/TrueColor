@@ -9,6 +9,7 @@ alias git_rm_untrack_files="git st | grep '^?' | awk '{print $2}' | xargs rm -rf
 alias dotfiles="cd $code_base/TrueColor"
 alias project="cd $project_base"
 alias reload="dotfiles && make && source ~/.zshrc"
+alias public_share="python -m SimpleHTTPServer 11111"
 
 alias -g V='| vim -'
 alias v='f -e vim'

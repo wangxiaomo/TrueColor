@@ -1,8 +1,35 @@
+# dev
+--ignore-directory=is:phpmyadmin
 --ignore-directory=is:node_modules
---ignore-directory=is:runtime
---ignore-directory=is:Runtime
 
 --ignore-file=ext:map
 --ignore-file=match:/[.-]min\.js$/
+
+# minmorecms
+--ignore-directory=is:#runtime
+--ignore-directory=is:vendor
+--ignore-directory=is:statics/js/ueditor
+--ignore-directory=is:statics/js/artDialog
+--ignore-directory=is:statics/js/colorPicker
+--ignore-directory=is:statics/js/comment
+--ignore-directory=is:statics/js/datePicker
+--ignore-directory=is:statics/js/swfupload
+--ignore-directory=is:statics/js/tabs
+--ignore-directory=is:statics/js/treeTable
+--ignore-directory=is:statics/js/zTree
+--ignore-directory=is:statics/js/edit_area
+
+--ignore-file=match:/jquery.*\.js/
+--ignore-file=is:ajaxForm.js
+--ignore-file=is:wind.js
+--ignore-file=is:validate.js
+--ignore-file=is:xd.js
+--ignore-file=is:common.js
+--ignore-file=is:cookie.js
+--ignore-file=is:draggable.js
+--ignore-file=is:html5.js
+--ignore-file=is:imgready.js
+--ignore-file=is:lazyload.js
+--ignore-file=is:swfobject.js
 
 --ignore-case
