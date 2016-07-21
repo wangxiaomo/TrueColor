@@ -31,6 +31,8 @@ Plugin 'unblevable/quick-scope'
 Plugin 'Raimondi/delimitMate'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'StanAngeloff/php.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'terryma/vim-multiple-cursors'
 call vundle#end()
 filetype on
 set completeopt-=preview
