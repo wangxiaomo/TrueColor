@@ -91,6 +91,7 @@ map  <leader>2 :tabn 2<CR>
 map  <leader>3 :tabn 3<CR>
 map  <leader>4 :tabn 4<CR>
 map  <leader>e :NERDTreeTabsToggle<CR>
+map  <leader>t :TagbarToggle<CR>
 map  <C-w>n    :tabnew<CR>
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
