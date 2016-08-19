@@ -1,6 +1,7 @@
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-	df = "diff "
+	df = diff
+    d = difftool 
 	st = status -s
 	mg = merge --no-ff
 	co = checkout
@@ -10,3 +11,15 @@
 	email = wxm4ever@gmail.com
 [push]
 	default = current
+[diff]
+	tool = vimdiff
+[difftool]
+    prompt = false
+[merge]
+	tool = vimdiff
+[color]
+	ui = true
+[core]
+	autocrlf = input
+[branch "code"]
+    remote = upstream
