@@ -33,6 +33,7 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'vim-scripts/loremipsum'
 call vundle#end()
 filetype on
 set completeopt-=preview
@@ -66,6 +67,8 @@ set colorcolumn=80
 set t_Co=256
 set laststatus=2
 set foldmethod=manual
+au BufWinLeave * silent mkview  "save file foldmethod status
+au BufRead * silent loadview    "load file foldmethod status
 set expandtab
 set fencs=utf-8,cp936
 set backspace=indent,eol,start
@@ -101,14 +104,17 @@ if exists(":tnoremap")
   tnoremap <Esc> <C-\><C-n>
 endif
 
-let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$', '\.swp$']
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$', '\.swp$', 'node_modules']
 let NERDTreeSortOrder=['^__\.py', '\/$', '*', '\.swp$', '\~$']
 let NERDTreeShowBookmarks=1
 let NERDTreeChDirMode=0
 let g:nerdtree_tabs_synchronize_view=1
+set wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip
 let g:ctrlp_root_markers = ['.svn', '.git', 'package.json', 'readme.md']
 let g:ctrlp_follow_symlinks = 1
-let g:ctrlp_working_path_mode = 'wr'
+let g:ctrlp_working_path_mode = 'wra'
 let g:ctrlp_custom_ignore={
 \ 'dir': '\v[\/]\.(git|hg|svn)$',
 \ 'file': '\v\.(so|swp|pyc)$',
