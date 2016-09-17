@@ -69,6 +69,7 @@ set colorcolumn=80
 set t_Co=256
 set laststatus=2
 set foldmethod=manual
+set viewdir=~/.vim-view
 au BufWinLeave ?* silent mkview  "save file foldmethod status
 au BufRead ?* silent loadview    "load file foldmethod status
 set expandtab
@@ -128,22 +129,22 @@ let g:airline#extensions#tabline#enabled=1
 let g:neocomplcache_enable_at_startup=1
 let g:neocomplcache_min_syntax_length=3
 let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "M",
-    \ "Staged"    : "S",
-    \ "Untracked" : "UnT",
-    \ "Renamed"   : "R",
-    \ "Unmerged"  : "UnM",
-    \ "Deleted"   : "D",
-    \ "Dirty"     : "Dirty",
-    \ "Clean"     : "C",
-    \ "Unknown"   : "U"
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ "Unknown"   : "?"
     \ }
 
 autocmd BufRead,BufNewFile /etc/nginx/* set ft=nginx
-autocmd FileType php,python,perl,markdown set sw=4 ts=4 expandtab
-autocmd FileType vim,ruby,javascript,html,css,jade,smarty set sw=2 ts=2 expandtab
-au BufNewFile,BufReadPost *.yml setl sw=2 ts=2 expandtab
-au BufNewFile,BufReadPost *.coffee setl sw=2 ts=2 expandtab
+autocmd FileType php,python,perl,markdown set sw=4 ts=4
+autocmd FileType vim,ruby,javascript,html,css,jade,smarty set sw=2 ts=2
+au BufNewFile,BufReadPost *.yml setl sw=2 ts=2
+au BufNewFile,BufReadPost *.coffee setl sw=2 ts=2
 au BufNewFile,BufReadPost *.json,*.js setl ft=javascript sw=2 ts=2
 au BufNewFile,BufReadPost *.pac setl ft=javascript sw=2 ts=2
 au BufNewFile,BufReadPost *.scss,*.sass,*.css setl ft=scss sw=2 ts=2
