@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'jistr/vim-nerdtree-tabs'
@@ -68,8 +69,8 @@ set colorcolumn=80
 set t_Co=256
 set laststatus=2
 set foldmethod=manual
-au BufWinLeave * silent mkview  "save file foldmethod status
-au BufRead * silent loadview    "load file foldmethod status
+au BufWinLeave ?* silent mkview  "save file foldmethod status
+au BufRead ?* silent loadview    "load file foldmethod status
 set expandtab
 set fencs=utf-8,cp936
 set backspace=indent,eol,start
@@ -77,6 +78,7 @@ set keywordprg=:help
 set guioptions=''
 "set gfn=Inconsolata:h9
 set gfn=Lucida_Console:h9
+set completeopt=longest,menu
 
 let base16colorspace=256
 let g:airline_theme='light'
@@ -125,6 +127,17 @@ let g:miniBufExplorerAutoStart=0
 let g:airline#extensions#tabline#enabled=1
 let g:neocomplcache_enable_at_startup=1
 let g:neocomplcache_min_syntax_length=3
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "M",
+    \ "Staged"    : "S",
+    \ "Untracked" : "UnT",
+    \ "Renamed"   : "R",
+    \ "Unmerged"  : "UnM",
+    \ "Deleted"   : "D",
+    \ "Dirty"     : "Dirty",
+    \ "Clean"     : "C",
+    \ "Unknown"   : "U"
+    \ }
 
 autocmd BufRead,BufNewFile /etc/nginx/* set ft=nginx
 autocmd FileType php,python,perl,markdown set sw=4 ts=4 expandtab
