@@ -36,6 +36,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'slim-template/vim-slim'
 Plugin 'vim-scripts/loremipsum'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'oplatek/Conque-Shell'
 call vundle#end()
 filetype on
 set completeopt-=preview
@@ -110,7 +112,7 @@ endif
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$', '\.swp$', 'node_modules']
+let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$', '\.swp$']
 let NERDTreeSortOrder=['^__\.py', '\/$', '*', '\.swp$', '\~$']
 let NERDTreeShowBookmarks=1
 let NERDTreeChDirMode=0
