@@ -38,6 +38,8 @@ Plugin 'slim-template/vim-slim'
 Plugin 'vim-scripts/loremipsum'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'oplatek/Conque-Shell'
+Plugin 'mhinz/vim-startify'
+Plugin 'SirVer/ultisnips'
 call vundle#end()
 filetype on
 set completeopt-=preview
@@ -110,8 +112,6 @@ if exists(":tnoremap")
   tnoremap <Esc> <C-\><C-n>
 endif
 
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$', '\.swp$']
 let NERDTreeSortOrder=['^__\.py', '\/$', '*', '\.swp$', '\~$']
 let NERDTreeShowBookmarks=1
@@ -141,6 +141,9 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Clean"     : "✔︎",
     \ "Unknown"   : "?"
     \ }
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 autocmd BufRead,BufNewFile /etc/nginx/* set ft=nginx
 autocmd FileType php,python,perl,markdown set sw=4 ts=4
