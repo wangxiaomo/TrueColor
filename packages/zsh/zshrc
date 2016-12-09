@@ -17,6 +17,7 @@ export LC_CTYPE='en_US.UTF-8'
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+[ -e $HOME/.config/composer/vendor/bin ] && export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 export MYSQL_PS1="\u@\h [\d]> "
 
 # pyenv setup
