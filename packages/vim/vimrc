@@ -54,10 +54,10 @@ set number
 set showmode
 set showcmd
 set showmatch
-set wrap
 set cursorline
 set history=2000
 set t_ti= t_te=
+set nowrap
 
 set hlsearch
 set ignorecase
@@ -88,11 +88,6 @@ set completeopt=longest,menu
 
 let base16colorspace=256
 let g:airline_theme='light'
-
-if !$LIGHT
-  set background=dark
-  colorscheme molokai
-endif
 
 if has("autocmd")
   au BufReadPost * if line("'\"")>1 && line("'\"")<=line("$") | exe "normal! g'\"" | endif
@@ -148,7 +143,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 autocmd BufRead,BufNewFile /etc/nginx/* set ft=nginx
 autocmd FileType php,python,perl,markdown set sw=4 ts=4
-autocmd FileType vim,ruby,javascript,html,css,jade,smarty set sw=2 ts=2
+autocmd FileType vim,ruby,javascript,html,css,jade,smarty,blade set sw=2 ts=2
 au BufNewFile,BufReadPost *.yml setl sw=2 ts=2
 au BufNewFile,BufReadPost *.coffee setl sw=2 ts=2
 au BufNewFile,BufReadPost *.json,*.js setl ft=javascript sw=2 ts=2
@@ -157,9 +152,3 @@ au BufNewFile,BufReadPost *.scss,*.sass,*.css setl ft=scss sw=2 ts=2
 au BufNewFile,BufReadPost *.slim setl ft=scss sw=2 ts=2
 
 command! PlzW w !sudo tee %
-
-hi SpellBad guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
-hi SpellCap guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
-hi IncSearch guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
-hi Search guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
-hi Pmenu           guifg=white guibg=red cterm=None ctermfg=white ctermbg=red
