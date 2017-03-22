@@ -13,3 +13,6 @@
 [submodule "packages/zsh/zsh-syntax-highlighting"]
 	path = packages/zsh/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "packages/zsh/zsh-autosuggestions"]
+	path = packages/zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
