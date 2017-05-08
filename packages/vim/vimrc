@@ -151,6 +151,6 @@ au BufNewFile,BufReadPost *.json,*.js setl ft=javascript sw=2 ts=2
 au BufNewFile,BufReadPost *.pac setl ft=javascript sw=2 ts=2
 au BufNewFile,BufReadPost *.scss,*.sass,*.css setl ft=scss sw=2 ts=2
 au BufNewFile,BufReadPost *.slim setl ft=scss sw=2 ts=2
-au BufNewFile,BufReadPost *.vue setl ft=vue
+au BufNewFile,BufReadPost *.vue setl ft=vue sw=2 ts=2
 
 command! PlzW w !sudo tee %
