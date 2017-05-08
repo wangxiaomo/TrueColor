@@ -10,6 +10,7 @@ setup:
 	ln -sf `pwd`/packages/zsh/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
 	ln -sf `pwd`/packages/zsh/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 	ln -sf `pwd`/packages/zsh/zsh-syntax-highlighting ~/.zsh-syntax-highlighting
+	ln -sf `pwd`/packages/fzf ~/.fzf
 	ln -sf `pwd`/extra/ackrc ~/.ackrc
 	ln -sf `pwd`/extra/gitconfig ~/.gitconfig
 	ln -sf `pwd`/.env ~/.env
