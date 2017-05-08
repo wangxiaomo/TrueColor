@@ -7,9 +7,6 @@
 [submodule "packages/vim/bundle/Vundle.vim"]
 	path = packages/vim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim
-[submodule "packages/fasd"]
-	path = packages/fasd
-	url = https://github.com/clvv/fasd
 [submodule "packages/zsh/zsh-syntax-highlighting"]
 	path = packages/zsh/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting

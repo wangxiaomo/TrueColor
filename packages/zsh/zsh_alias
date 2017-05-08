@@ -16,8 +16,6 @@ alias imgcat="~/.iterm2/imgcat"
 alias it2dl="~/.iterm2/it2dl"
 
 alias -g V='| vim -'
-alias v='f -e vim'
-alias o='o -e firefox'
 
 UBUNTU=`uname -v | grep -i ubuntu`
 if [ $UBUNTU ]; then

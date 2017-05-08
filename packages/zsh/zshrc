@@ -45,10 +45,10 @@ fi
 
 . ~/.zsh_vhosts
 . ~/.zsh_alias
-eval "$(fasd --init posix-alias zsh-hook zsh-ccomp zsh-ccomp-install zsh-wcomp zsh-wcomp-install)"
-
 . ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 [ -e ~/.zsh_dev ] && . ~/.zsh_dev
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
