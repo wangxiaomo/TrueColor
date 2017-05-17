@@ -90,6 +90,7 @@ set completeopt=longest,menu
 
 let base16colorspace=256
 let g:airline_theme='light'
+colorscheme molokai
 
 if has("autocmd")
   au BufReadPost * if line("'\"")>1 && line("'\"")<=line("$") | exe "normal! g'\"" | endif
