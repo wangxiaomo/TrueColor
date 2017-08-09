@@ -43,6 +43,7 @@ Plugin 'mhinz/vim-startify'
 Plugin 'SirVer/ultisnips'
 Plugin 'jwalton512/vim-blade'
 Plugin 'posva/vim-vue'
+Plugin 'kristijanhusak/vim-hybrid-material'
 call vundle#end()
 filetype on
 set completeopt-=preview
@@ -89,8 +90,10 @@ set gfn=Lucida_Console:h9
 set completeopt=longest,menu
 
 let base16colorspace=256
-let g:airline_theme='light'
-colorscheme molokai
+let g:enable_bold_font=1
+let g:airline_theme='hybrid'
+set background=dark
+colorscheme hybrid_reverse
 
 if has("autocmd")
   au BufReadPost * if line("'\"")>1 && line("'\"")<=line("$") | exe "normal! g'\"" | endif
