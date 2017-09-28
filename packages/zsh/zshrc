@@ -62,3 +62,4 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 [ -e ~/.zsh_dev ] && . ~/.zsh_dev
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(fasd --init posix-alias zsh-hook)"

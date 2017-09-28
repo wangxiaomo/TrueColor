@@ -16,3 +16,6 @@
 [submodule "packages/fzf"]
 	path = packages/fzf
 	url = https://github.com/junegunn/fzf
+[submodule "packages/fasd"]
+	path = packages/fasd
+	url = https://github.com/clvv/fasd
