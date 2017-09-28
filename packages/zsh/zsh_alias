@@ -14,6 +14,8 @@ alias reload="dotfiles && make && source ~/.zshrc"
 alias public_share="python -m SimpleHTTPServer 11111"
 alias imgcat="~/.iterm2/imgcat"
 alias it2dl="~/.iterm2/it2dl"
+alias docker_stats='docker stats --format="table {{.Name}}\t{{.ID}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.MemPerc}}\t{{.NetIO}}\t{{.BlockIO}}"'
+alias drm='docker rm'
 
 alias -g V='| vim -'
 
