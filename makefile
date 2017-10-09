@@ -1,3 +1,7 @@
+install:
+	sudo yum install -y zsh vim tmux git tig
+	cd `pwd`/packages/fasd && sudo make install
+
 setup:
 	/bin/rm -rf ~/.tmux.conf ~/.vim ~/.vimrc ~/.zshrc
 	ln -sf `pwd`/packages/tmux/tmux.conf ~/.tmux.conf

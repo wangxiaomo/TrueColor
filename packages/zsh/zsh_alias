@@ -15,7 +15,9 @@ alias public_share="python -m SimpleHTTPServer 11111"
 alias imgcat="~/.iterm2/imgcat"
 alias it2dl="~/.iterm2/it2dl"
 alias docker_stats='docker stats --format="table {{.Name}}\t{{.ID}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.MemPerc}}\t{{.NetIO}}\t{{.BlockIO}}"'
-alias drm='docker rm'
+alias docker_psa='docker container ps -a';
+alias docker_crm='docker container rm'
+alias docker_irm='docker image rm'
 alias v='f -e vim' # quick opening files with vim
 alias m='f -e mplayer' # quick opening files with mplayer
 alias o='a -e xdg-open' # quick opening files with xdg-open
