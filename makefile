@@ -1,5 +1,5 @@
 install:
-	sudo yum install -y zsh vim tmux git tig
+	sudo yum install -y zsh vim tmux git tig ack
 	cd `pwd`/packages/fasd && sudo make install
 
 pyenv:
