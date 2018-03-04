@@ -9,11 +9,7 @@ alias dbdump="mysqldump -h$db_host -u$db_user -p$db_pass"
 alias git_rm_untrack_files="git st | grep '^?' | awk '{print $2}' | xargs rm -rf"
 alias dotfiles="cd $code_base/TrueColor"
 alias project="cd $project_base"
-alias cms="cd ~/data/env/www"
-alias reload="dotfiles && make && source ~/.zshrc"
 alias public_share="python -m SimpleHTTPServer 11111"
-alias imgcat="~/.iterm2/imgcat"
-alias it2dl="~/.iterm2/it2dl"
 alias docker_stats='docker stats --format="table {{.Name}}\t{{.ID}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.MemPerc}}\t{{.NetIO}}\t{{.BlockIO}}"'
 alias docker_psa='docker container ps -a';
 alias docker_crm='docker container rm'
@@ -23,6 +19,7 @@ alias m='f -e mplayer' # quick opening files with mplayer
 alias o='a -e xdg-open' # quick opening files with xdg-open
 
 alias -g V='| vim -'
+alias -g M='| more'
 
 UBUNTU=`uname -v | grep -i ubuntu`
 if [ $UBUNTU ]; then

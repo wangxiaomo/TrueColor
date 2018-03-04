@@ -37,13 +37,11 @@ Plugin 'majutsushi/tagbar'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'slim-template/vim-slim'
 Plugin 'vim-scripts/loremipsum'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'oplatek/Conque-Shell'
 Plugin 'mhinz/vim-startify'
-Plugin 'SirVer/ultisnips'
 Plugin 'jwalton512/vim-blade'
 Plugin 'posva/vim-vue'
 Plugin 'kristijanhusak/vim-hybrid-material'
+Plugin 'fatih/vim-go'
 call vundle#end()
 filetype on
 set completeopt-=preview
@@ -143,9 +141,6 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Clean"     : "✔︎",
     \ "Unknown"   : "?"
     \ }
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 autocmd BufRead,BufNewFile /etc/nginx/* set ft=nginx
 autocmd FileType php,python,perl,markdown set sw=4 ts=4
