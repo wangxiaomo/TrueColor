@@ -8,7 +8,6 @@ alias db="mysql -h$db_host -u$db_user -p$db_pass"
 alias dbdump="mysqldump -h$db_host -u$db_user -p$db_pass"
 alias git_rm_untrack_files="git st | grep '^?' | awk '{print $2}' | xargs rm -rf"
 alias dotfiles="cd $code_base/TrueColor"
-alias reload="dotfiles && make && source ~/.zshrc"
 alias public_share="python -m SimpleHTTPServer 11111"
 alias docker_stats='docker stats --format="table {{.Name}}\t{{.ID}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.MemPerc}}\t{{.NetIO}}\t{{.BlockIO}}"'
 alias docker_psa='docker container ps -a';
@@ -19,6 +18,7 @@ alias m='f -e mplayer' # quick opening files with mplayer
 alias o='a -e xdg-open' # quick opening files with xdg-open
 
 alias -g V='| vim -'
+alias -g M='| more'
 
 if [ "$TERM" = "linux" ]; then
     echo -en "\e]P0000000" #black
