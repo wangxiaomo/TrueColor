@@ -42,6 +42,7 @@ Plugin 'jwalton512/vim-blade'
 Plugin 'posva/vim-vue'
 Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'fatih/vim-go'
+Plugin 'leafgarland/typescript-vim'
 call vundle#end()
 filetype on
 set completeopt-=preview
@@ -152,5 +153,7 @@ au BufNewFile,BufReadPost *.pac setl ft=javascript sw=2 ts=2
 au BufNewFile,BufReadPost *.scss,*.sass setl ft=scss sw=2 ts=2
 au BufNewFile,BufReadPost *.slim setl ft=scss sw=2 ts=2
 au BufNewFile,BufReadPost *.vue setl ft=vue sw=2 ts=2
+au BufNewFile,BufReadPost *.ts setl ft=typescript
+au BufNewFile,BufReadPost makefile setl noexpandtab
 
 command! PlzW w !sudo tee %
