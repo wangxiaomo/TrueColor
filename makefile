@@ -1,11 +1,11 @@
-install:
+centos-preinstall:
 	sudo yum install -y zsh vim tmux git tig ack
 	cd `pwd`/packages/fasd && sudo make install
 
 pyenv:
-    git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+	git clone https://github.com/pyenv/pyenv.git ~/.pyenv
     # Need at least one python to active virtualenv
-    git clone https://github.com/pyenv/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
+	git clone https://github.com/pyenv/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
 
 setup:
 	/bin/rm -rf ~/.tmux.conf ~/.vim ~/.vimrc ~/.zshrc
