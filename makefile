@@ -2,6 +2,12 @@ centos-preinstall:
 	sudo yum install -y zsh vim tmux git tig ack
 	cd `pwd`/packages/fasd && sudo make install
 
+ubuntu-preinstall:
+	sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+			libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+			xz-utils tk-dev
+	cd `pwd`/packages/fasd && sudo make install
+
 pyenv:
 	git clone https://github.com/pyenv/pyenv.git ~/.pyenv
     # Need at least one python to active virtualenv
