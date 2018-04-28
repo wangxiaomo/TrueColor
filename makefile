@@ -1,6 +1,10 @@
 centos-preinstall:
-	sudo yum install -y zsh vim tmux git tig ack
+	sudo yum install -y zsh vim tmux git htop ncdu tig ack
 	cd `pwd`/packages/fasd && sudo make install
+
+manjaro-preinstall:
+	sudo pacman -Syu
+	sudo pacman -S vim tmux htop ncdu ack tig
 
 pyenv:
 	git clone https://github.com/pyenv/pyenv.git ~/.pyenv
