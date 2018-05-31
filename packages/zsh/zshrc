@@ -38,6 +38,10 @@ if [ -d "${RBENV_ROOT}" ]; then
     eval "$(rbenv init -)"
 fi
 
+# nvm setup
+export NVM_ROOT="${HOME}/.nvm"
+[ -s "$NVM_ROOT/nvm.sh" ] && \. "$NVM_ROOT/nvm.sh"
+
 if [ -d "~/.oh-my-zsh/custom/plugins/zsh-completions" ]; then
     autoload -U compinit && compinit
 fi
