@@ -43,6 +43,8 @@ Plugin 'posva/vim-vue'
 Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'fatih/vim-go'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 call vundle#end()
 filetype on
 set completeopt-=preview
