@@ -103,7 +103,7 @@ set completefunc=emoji#complete
 
 let base16colorspace=256
 let g:enable_bold_font=1
-let g:airline_theme='hybrid'
+let g:airline_theme='gruvbox'
 let g:better_whitespace_enabled=1
 set background=dark
 colorscheme gruvbox
