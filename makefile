@@ -1,5 +1,5 @@
 centos-preinstall:
-	sudo yum install -y zsh vim tmux git htop ncdu tig ack
+	sudo yum install -y zsh vim tmux git htop ncdu tig ack mlocate
 	cd `pwd`/packages/fasd && sudo make install
 
 manjaro-preinstall:
