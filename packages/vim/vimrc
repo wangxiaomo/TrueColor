@@ -6,7 +6,6 @@ set rtp+=~/.fzf
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'jistr/vim-nerdtree-tabs'
@@ -20,12 +19,9 @@ Plugin 'mileszs/ack.vim'
 Plugin 'vim-scripts/vim-cursorword'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-surround'
-Plugin 'tomasr/molokai'
 Plugin 'mhinz/vim-signify'
 Plugin 'leshill/vim-json'
 Plugin 'honza/vim-snippets'
-Plugin 'tyru/open-browser.vim'
-Plugin 'Shougo/neocomplcache.vim'
 Plugin 'vim-scripts/nginx.vim'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'vim-scripts/Emmet.vim'
@@ -40,13 +36,28 @@ Plugin 'vim-scripts/loremipsum'
 Plugin 'mhinz/vim-startify'
 Plugin 'jwalton512/vim-blade'
 Plugin 'posva/vim-vue'
-Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'gcmt/wildfire.vim'
+Plugin 'Yggdroot/indentLine'
+Plugin 'junegunn/vim-emoji'
+Plugin 'mhinz/vim-grepper', { 'on': ['Grepper', '<plug>(GrepperOperator)'] }
+Plugin 'morhetz/gruvbox'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'osyo-manga/vim-jplus'
+Plugin 'prabirshrestha/asyncomplete.vim'
+Plugin 'prabirshrestha/asyncomplete-buffer.vim'
+Plugin 'prabirshrestha/asyncomplete-emoji.vim'
+Plugin 'prabirshrestha/asyncomplete-file.vim'
+Plugin 'prabirshrestha/asyncomplete-tags.vim'
+Plugin 'yami-beta/asyncomplete-omni.vim'
+Plugin 'Shougo/context_filetype.vim'
+Plugin 'Shougo/vimshell.vim'
 call vundle#end()
 filetype on
-set completeopt-=preview
 
 let mapleader=','
 syntax on
@@ -87,13 +98,15 @@ set keywordprg=:help
 set guioptions=''
 "set gfn=Inconsolata:h9
 set gfn=Lucida_Console:h9
-set completeopt=longest,menu
+set completeopt=menuone,preview
+set completefunc=emoji#complete
 
 let base16colorspace=256
 let g:enable_bold_font=1
 let g:airline_theme='hybrid'
+let g:better_whitespace_enabled=1
 set background=dark
-colorscheme hybrid_reverse
+colorscheme gruvbox
 
 if has("autocmd")
   au BufReadPost * if line("'\"")>1 && line("'\"")<=line("$") | exe "normal! g'\"" | endif
@@ -124,25 +137,16 @@ let g:ctrlp_root_markers = ['.svn', '.git', 'package.json', 'readme.md']
 let g:ctrlp_follow_symlinks = 1
 let g:ctrlp_working_path_mode = 'wra'
 let g:ctrlp_custom_ignore={
-\ 'dir': '\v[\/]\.(git|hg|svn)$',
-\ 'file': '\v\.(so|swp|pyc)$',
-\}
+      \ 'dir': '\v[\/]\.(git|hg|svn)$',
+      \ 'file': '\v\.(so|swp|pyc)$',
+    \}
 let g:ctrlp_use_caching=1
 let g:miniBufExplorerAutoStart=0
 let g:airline#extensions#tabline#enabled=1
-let g:neocomplcache_enable_at_startup=1
-let g:neocomplcache_min_syntax_length=3
-let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ "Unknown"   : "?"
-    \ }
+let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
+let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
+let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
+let g:gitgutter_sign_modified_removed = emoji#for('collision')
 
 autocmd BufRead,BufNewFile /etc/nginx/* set ft=nginx
 autocmd FileType php,python,perl,markdown set sw=4 ts=4
@@ -158,3 +162,39 @@ au BufNewFile,BufReadPost *.ts setl ft=typescript sw=2 ts=2
 au BufNewFile,BufReadPost makefile setl noexpandtab
 
 command! PlzW w !sudo tee %
+
+call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options({
+    \ 'name': 'buffer',
+    \ 'whitelist': ['*'],
+    \ 'blacklist': ['go'],
+    \ 'completor': function('asyncomplete#sources#buffer#completor'),
+    \ }))
+
+au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#emoji#get_source_options({
+    \ 'name': 'emoji',
+    \ 'whitelist': ['*'],
+    \ 'completor': function('asyncomplete#sources#emoji#completor'),
+    \ }))
+
+au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#file#get_source_options({
+    \ 'name': 'file',
+    \ 'whitelist': ['*'],
+    \ 'priority': 10,
+    \ 'completor': function('asyncomplete#sources#file#completor')
+    \ }))
+
+au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#tags#get_source_options({
+    \ 'name': 'tags',
+    \ 'whitelist': ['c'],
+    \ 'completor': function('asyncomplete#sources#tags#completor'),
+    \ 'config': {
+    \    'max_file_size': 50000000,
+    \  },
+    \ }))
+
+call asyncomplete#register_source(asyncomplete#sources#omni#get_source_options({
+    \ 'name': 'omni',
+    \ 'whitelist': ['*'],
+    \ 'blacklist': ['c', 'cpp', 'html'],
+    \ 'completor': function('asyncomplete#sources#omni#completor')
+    \  }))

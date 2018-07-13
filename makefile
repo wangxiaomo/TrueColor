@@ -8,7 +8,7 @@ manjaro-preinstall:
 
 pyenv:
 	git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-    # Need at least one python to active virtualenv
+	# Need at least one python to active virtualenv
 	git clone https://github.com/pyenv/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
 
 nvm:
