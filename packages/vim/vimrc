@@ -54,6 +54,7 @@ Plugin 'prabirshrestha/asyncomplete-emoji.vim'
 Plugin 'prabirshrestha/asyncomplete-file.vim'
 Plugin 'prabirshrestha/asyncomplete-tags.vim'
 Plugin 'yami-beta/asyncomplete-omni.vim'
+Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 call vundle#end()
