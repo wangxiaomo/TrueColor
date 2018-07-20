@@ -13,12 +13,14 @@ alias docker_stats='docker stats --format="table {{.Name}}\t{{.ID}}\t{{.CPUPerc}
 alias docker_psa='docker container ps -a';
 alias docker_crm='docker container rm'
 alias docker_irm='docker image rm'
+alias cman='man -M /usr/share/man/zh_CN'
 alias v='f -e vim' # quick opening files with vim
 alias m='f -e mplayer' # quick opening files with mplayer
 alias o='a -e xdg-open' # quick opening files with xdg-open
 
 alias -g V='| vim -'
 alias -g M='| more'
+alias tmux='tmux -2'
 
 if [ "$TERM" = "linux" ]; then
     echo -en "\e]P0000000" #black
