@@ -42,18 +42,11 @@ Plugin 'mxw/vim-jsx'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'gcmt/wildfire.vim'
 Plugin 'Yggdroot/indentLine'
-Plugin 'junegunn/vim-emoji'
 Plugin 'mhinz/vim-grepper', { 'on': ['Grepper', '<plug>(GrepperOperator)'] }
 Plugin 'morhetz/gruvbox'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'osyo-manga/vim-jplus'
-Plugin 'prabirshrestha/asyncomplete.vim'
-Plugin 'prabirshrestha/asyncomplete-buffer.vim'
-Plugin 'prabirshrestha/asyncomplete-emoji.vim'
-Plugin 'prabirshrestha/asyncomplete-file.vim'
-Plugin 'prabirshrestha/asyncomplete-tags.vim'
-Plugin 'yami-beta/asyncomplete-omni.vim'
 Plugin 'Shougo/vimshell.vim'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 call vundle#end()
@@ -140,10 +133,6 @@ let g:ctrlp_custom_ignore={
     \}
 let g:ctrlp_use_caching=1
 let g:miniBufExplorerAutoStart=0
-let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
-let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
-let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
-let g:gitgutter_sign_modified_removed = emoji#for('collision')
 let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled=1
 let g:better_whitespace_enabled=1
@@ -162,5 +151,3 @@ au BufNewFile,BufReadPost *.ts setl ft=typescript sw=2 ts=2
 au BufNewFile,BufReadPost makefile setl noexpandtab
 
 command! PlzW w !sudo tee %
-
-source ~/.vim/asyncompleteopt.vim
