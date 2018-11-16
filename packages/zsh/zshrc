@@ -31,6 +31,10 @@ if [ -d "${PYENV_ROOT}" ]; then
     pyenv virtualenvwrapper
 fi
 
+# nvm setup
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
 # rbenv setup
 export RBENV_ROOT="${HOME}/.rbenv"
 if [ -d "${RBENV_ROOT}" ]; then

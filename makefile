@@ -2,6 +2,12 @@ centos-preinstall:
 	sudo yum install -y zsh vim tmux git htop ncdu tig ack mlocate
 	cd `pwd`/packages/fasd && sudo make install
 
+ubuntu-preinstall:
+	sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+			libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+			xz-utils tk-dev
+	cd `pwd`/packages/fasd && sudo make install
+
 manjaro-preinstall:
 	sudo pacman -Syu
 	sudo pacman -S vim tmux htop ncdu ack tig
@@ -13,7 +19,6 @@ pyenv:
 
 nvm:
 	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-	# nvm install --lts
 
 setup:
 	/bin/rm -rf ~/.tmux.conf ~/.vim ~/.vimrc ~/.zshrc
