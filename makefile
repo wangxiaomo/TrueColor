@@ -36,3 +36,9 @@ setup:
 	ln -sf `pwd`/extra/ackrc ~/.ackrc
 	ln -sf `pwd`/extra/gitconfig ~/.gitconfig
 	ln -sf `pwd`/.env ~/.env
+
+vim8:
+	git clone https://github.com/vim/vim.git
+	cd vim/src
+	./configure --with-features=huge --enable-multibyte --enable-python3interp --enable-pythoninterp
+	make && sudo make install
