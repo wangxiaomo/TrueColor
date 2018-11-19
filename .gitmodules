@@ -4,9 +4,6 @@
 [submodule "packages/zsh/zsh-completions"]
 	path = packages/zsh/zsh-completions
 	url = git://github.com/zsh-users/zsh-completions.git
-[submodule "packages/vim/bundle/Vundle.vim"]
-	path = packages/vim/bundle/Vundle.vim
-	url = https://github.com/VundleVim/Vundle.vim
 [submodule "packages/zsh/zsh-syntax-highlighting"]
 	path = packages/zsh/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting

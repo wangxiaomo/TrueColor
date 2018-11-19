@@ -1,8 +1,8 @@
 *.swp
 .DS_Store
 .env
+/vim
 packages/zsh/oh-my-zsh
 packages/zsh/zsh-completions
-packages/vim/bundle/
-!packages/vim/bundle/Vundle.vim
-vim
+packages/vim/pack
+packages/vim/view

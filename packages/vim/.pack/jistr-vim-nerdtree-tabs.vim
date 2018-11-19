@@ -1,0 +1,1 @@
+let g:nerdtree_tabs_synchronize_view=1
