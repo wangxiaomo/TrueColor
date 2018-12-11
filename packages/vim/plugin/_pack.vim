@@ -15,14 +15,17 @@ let g:PaperColor_Theme_Options = {
   \     },
   \     'default.light': {
   \       'override': {
-  \         'color00': ['#FFFFFF', 255],
-  \       }
+  \         'color00': ['#FFFFFF', ''],
+  \       },
   \     },
   \   }
   \ }
 
+set background=light
+colorscheme PaperColor
+
 " bling/vim-airline
-let g:airline_theme='gruvbox'
+let g:airline_theme='papercolor'
 let g:airline#extensions#tabline#enabled=1
 
 " jistr/vim-nerdtree-tabs

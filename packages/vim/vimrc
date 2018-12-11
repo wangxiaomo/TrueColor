@@ -10,3 +10,4 @@ syntax on
 source ~/.vim/.pack/base.vim
 source ~/.vim/.pack/autocmd.vim
 source ~/.vim/.pack/command.vim
+source ~/.vim/.pack/highlight.vim
