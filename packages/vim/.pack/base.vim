@@ -30,5 +30,5 @@ set completeopt=menuone,preview
 
 let base16colorspace=256
 let g:enable_bold_font=1
-set background=dark
-colorscheme gruvbox
+
+highlight Pmenu ctermbg=red ctermfg=white

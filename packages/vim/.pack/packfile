@@ -6,6 +6,11 @@
 - 
   category: default
   local: false
+  name: "NLKNguyen/papercolor-theme"
+  opt: false
+- 
+  category: default
+  local: false
   name: Raimondi/delimitMate
   opt: false
 - 

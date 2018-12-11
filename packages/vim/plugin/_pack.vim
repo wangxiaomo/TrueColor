@@ -7,6 +7,20 @@ function! s:do_cmd(cmd, bang, start, end, args)
 endfunction
 
 
+" NLKNguyen/papercolor-theme
+let g:PaperColor_Theme_Options = {
+  \   'theme': {
+  \     'default': {
+  \       'transparent_background': 1
+  \     },
+  \     'default.light': {
+  \       'override': {
+  \         'color00': ['#FFFFFF', 255],
+  \       }
+  \     },
+  \   }
+  \ }
+
 " bling/vim-airline
 let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled=1
