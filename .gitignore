@@ -6,3 +6,4 @@ packages/zsh/oh-my-zsh
 packages/zsh/zsh-completions
 packages/vim/pack
 packages/vim/view
+packages/vim/plugin/_pack.vim
