@@ -28,5 +28,18 @@ set backspace=indent,eol,start
 set keywordprg=:help
 set completeopt=menuone,preview
 
-let base16colorspace=256
+let g:onedark_termcolors=256
 let g:enable_bold_font=1
+
+if (empty($TMUX))
+  if (has("nvim"))
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+endif
+
+packadd! onedark.vim
+set background=dark
+colorscheme onedark

@@ -8,9 +8,8 @@ ubuntu-preinstall:
 			xz-utils tk-dev
 	cd `pwd`/packages/fasd && sudo make install
 
-manjaro-preinstall:
-	sudo pacman -Syu
-	sudo pacman -S vim tmux htop ncdu ack tig
+tpm:
+	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 pyenv:
 	git clone https://github.com/pyenv/pyenv.git ~/.pyenv
