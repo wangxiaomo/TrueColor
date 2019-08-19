@@ -1,12 +1,8 @@
 centos-preinstall:
-	sudo yum install -y zsh vim tmux git htop ncdu tig ack mlocate
-	cd `pwd`/packages/fasd && sudo make install
+	sudo yum install gcc zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel tk-devel libffi-devel
 
 ubuntu-preinstall:
-	sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
-			libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-			xz-utils tk-dev
-	cd `pwd`/packages/fasd && sudo make install
+	sudo apt-get update; sudo apt-get install --no-install-recommends tmux fasd make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 
 tpm:
 	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
@@ -19,7 +15,7 @@ pyenv:
 nvm:
 	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
-setup:
+setup: tpm
 	/bin/rm -rf ~/.tmux.conf ~/.vim ~/.vimrc ~/.zshrc
 	ln -sf `pwd`/packages/tmux/tmux.conf ~/.tmux.conf
 	ln -sf `pwd`/packages/vim ~/.vim
