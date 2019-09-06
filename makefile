@@ -37,3 +37,19 @@ vim8:
 	cd `pwd`/vim/src
 	./configure --with-features=huge --enable-multibyte --enable-python3interp --enable-pythoninterp
 	make && sudo make install
+
+manjaro:
+	sudo pacman -Syu
+	sudo pacman -S tmux vim zsh fasd chromium wqy-microhei wqy-zenhei wqy-microhei-lite ttf-arphic-ukai ttf-arphic-uming rdesktop net-tools expac
+	# add content below to /etc/pacman.conf
+	# [archlinuxcn]
+	# SigLevel = Optional TrustedOnly
+	# Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
+	# then
+	sudo pacman -Syy && sudo pacman -S archlinuxcn-keyring
+	sudo pacman -S fcitx-im fcitx-configtool fcitx-sogoupinyin
+	sudo yaourt -S fcitx-qt4
+	# add content below to ~/.xprofile
+	# export GTK_IM_MODULE=fcitx
+	# export QT_IM_MODULE=fcitx
+	# export XMODIFIERS="@im=fcitx"
