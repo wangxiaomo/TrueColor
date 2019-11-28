@@ -10,9 +10,3 @@
 [submodule "packages/zsh/zsh-autosuggestions"]
 	path = packages/zsh/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule "packages/fzf"]
-	path = packages/fzf
-	url = https://github.com/junegunn/fzf
-[submodule "packages/fasd"]
-	path = packages/fasd
-	url = https://github.com/clvv/fasd

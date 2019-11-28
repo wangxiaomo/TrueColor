@@ -5,6 +5,7 @@ ubuntu-preinstall:
 	sudo apt-get update; sudo apt-get install --no-install-recommends tmux fasd make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 
 tpm:
+	rm -rf ~/.tmux/plugins/tpm
 	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 pyenv:
@@ -24,9 +25,6 @@ setup: tpm
 	ln -sf `pwd`/packages/zsh/zshrc ~/.zshrc
 	ln -sf `pwd`/packages/zsh/zsh_alias ~/.zsh_alias
 	ln -sf `pwd`/packages/zsh/zsh_vhosts ~/.zsh_vhosts
-	ln -sf `pwd`/packages/zsh/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
-	ln -sf `pwd`/packages/zsh/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-	ln -sf `pwd`/packages/zsh/zsh-syntax-highlighting ~/.zsh-syntax-highlighting
 	ln -sf `pwd`/packages/fzf ~/.fzf
 	ln -sf `pwd`/extra/ackrc ~/.ackrc
 	ln -sf `pwd`/extra/gitconfig ~/.gitconfig
