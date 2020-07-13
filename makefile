@@ -20,6 +20,7 @@ setup: tpm
 	/bin/rm -rf ~/.tmux.conf ~/.vim ~/.vimrc ~/.zshrc
 	ln -sf `pwd`/packages/tmux/tmux.conf ~/.tmux.conf
 	ln -sf `pwd`/packages/vim ~/.vim
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	ln -sf `pwd`/packages/vim/vimrc ~/.vimrc
 	ln -sf `pwd`/packages/zsh/oh-my-zsh ~/.oh-my-zsh
 	ln -sf `pwd`/packages/zsh/zshrc ~/.zshrc
