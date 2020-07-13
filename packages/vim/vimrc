@@ -1,13 +1,58 @@
 set nocompatible
-
 filetype off
-set rtp+=~/.fzf
-filetype on
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'ap/vim-css-color'
+Plugin 'bling/vim-airline'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'joshdick/onedark.vim'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+call vundle#end()
+filetype plugin indent on
+
+set number
+set nowrap
+
+set expandtab
+set sw=4
+set ts=4
+
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+set viewdir=~/.vim-view
+set fencs=utf-8,cp936
+set backspace=indent,eol,start
+
+syntax on
+colorscheme onedark
+let g:airline_theme='onedark'
 
 let mapleader=','
-syntax on
 
-source ~/.vim/.pack/base.vim
-source ~/.vim/.pack/autocmd.vim
-source ~/.vim/.pack/command.vim
-source ~/.vim/.pack/highlight.vim
+au BufWinLeave ?* silent mkview
+au BufRead ?* silent loadview
+if has("autocmd")
+  au BufReadPost * if line("'\"")>1 && line("'\"")<=line("$") | exe "normal! g'\"" | endif
+endif
+
+map  <leader>e :NERDTreeTabsToggle<CR>
+map  <leader>1 :tabn 1<CR>
+map  <leader>2 :tabn 2<CR>
+map  <leader>3 :tabn 3<CR>
+map  <leader>4 :tabn 4<CR>
+
+command! PlzW w !sudo tee %
+
+
+let g:ctrlp_root_markers = ['.svn', '.git', 'package.json', 'readme.md']
+let g:ctrlp_follow_symlinks = 1
+let g:ctrlp_working_path_mode = 'wra'
+let g:ctrlp_custom_ignore = {'dir': '\v[\/]\.(git|hg|svn)$','file': '\v\.(so|swp|pyc)$'}
+let g:ctrlp_use_caching = 1
